@@ -4,6 +4,9 @@ function loadScript(url, data, callback) {
   var src = buildUrl(url, data),
       script = document.createElement('script');
   script.src = src;
+  if (!data.callback) {
+    throw new Error('callback is not defined')
+  }
   window[data.callback] = function (res) {
     script.onload = () => {
       callback(null, res)
@@ -16,7 +19,7 @@ function loadScript(url, data, callback) {
 }
 
 function promisify(fn) {
-  return function (url, data = null) {
+  return function (url, data = {}) {
     if (!url) {
       throw new Error('url not defined')
     }
@@ -34,3 +37,4 @@ function promisify(fn) {
   }
 }
 
+export default promisify(loadScript)

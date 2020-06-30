@@ -1,15 +1,14 @@
-
 export function buildUrl(url, data) {
   if (data && typeof data === 'object') {
     let parts = []
 
     for (let key in data) {
-      value = data[key]
+      let values,
+          value = data[key]
+
       if (value === null || typeof value === "undefined") {
         return
       }
-
-      let values
 
       if (Array.isArray(value)) {
         values = value

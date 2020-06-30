@@ -5,8 +5,9 @@ module.exports = {
   entry: {jsonpRequest: './src/jsonpRequest.js'},
   output: {
     filename: '[name].min.js',
-    libraryTarget: 'umd',
     library: 'jsonpRequest',
+    libraryTarget: 'umd',
     path: path.resolve(__dirname, 'dist'),
+    libraryExport: 'default'
   }
 }
