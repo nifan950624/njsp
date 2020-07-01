@@ -1,8 +1,9 @@
 {
-  "name": "jsonpRequest",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "njsp",
+  "version": "0.2.4",
+  "description": "deal with jsonp",
+  "entry point": "njsp.js",
+  "git repository": "https://github.com/nifan950624/jsonpRequest.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
@@ -12,7 +13,7 @@
     "request"
   ],
   "author": "nifan950624",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12"
