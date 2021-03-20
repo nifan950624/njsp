@@ -1,8 +1,8 @@
 {
-  "name": "jsonpPromiseRequest",
+  "name": "njsp",
   "version": "1.0.0",
   "description": "deal with jsonp",
-  "entry point": "jsonpPromiseRequest.js",
+  "entry point": "njsp.js",
   "git repository": "https://github.com/nifan950624/jsonpRequest.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
