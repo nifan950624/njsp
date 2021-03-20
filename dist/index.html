@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script src="njsp.min.js"></script>
+    <script>
+      njsp('http://suggest.taobao.com/sug', {
+        code: 'utf-8',
+        q: '简爱',
+        callback: 'cb'
+      }).then(res => {
+        const { result = [] } = res
+
+        const ul = createElement('ul')
+        Array.prototype.map.call(result, (item, index) => {
+          const li = createElement('li')
+          li.innerText = item.toString()
+          document.body.appendChild(ul.appendChild(li))
+        })
+      })
+
+      function createElement(el) {
+        return document.createElement(el)
+      }
+    </script>
+  </body>
+</html>

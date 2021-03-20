@@ -4,7 +4,7 @@ var webpack = require('webpack');
 
 module.exports = {
   mode: 'production',
-  entry: {jsonpRequest: './src/njsp.js'},
+  entry: { njsp: './src/njsp.js' },
   output: {
     filename: '[name].min.js',
     library: 'njsp',
