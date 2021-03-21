@@ -1,6 +1,6 @@
 {
   "name": "njsp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "deal with jsonp",
   "entry point": "njsp.js",
   "git repository": "https://github.com/nifan950624/jsonpRequest.git",
